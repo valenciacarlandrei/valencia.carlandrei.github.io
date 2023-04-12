@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon_io/favicon-32x32.png" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+    <!-- leaflet library link-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+   
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Panahon Pal | Calamba City Weather</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header">
+      <a href="" class="logo">
+        <img src="./images/weatherpng.png" alt="" srcset="" />
+        <h1>panahon pal</h1>
+      </a>
+
+      <a href="./search.html" class="btn">
+        <i class="fa-solid fa-magnifying-glass"></i> search</a>
+
+      <p id="demo"></p>
+    </div>
+
+    <!-- current weather -->
+    <div class="box" id="weather"></div>
+  
+
+    <section class="container">
+
+      <h3>5-day Weather Forecast 
+        <br><span>3hrs Interval</span></h3>
+
+        <div id="forecast"></div>
+
+    </section>
+
+    <!-- openstreetmap -->
+    <section class="container">
+
+      <h3>Interactive Weather Map</h3>
+      <div id="map"></div>
+
+    </section>
+
+
+    <!-- footer -->
+    <div class="footer">
+
+      <h3>powered by:</h3>
+      
+      <div class="flex">
+      <a href="https://openweathermap.org/"> <img src="./images/openweather.png" alt="" srcset="" /></a> 
+      <a href="https://www.openstreetmap.org/copyright"> <img src="./images/openstreetmap-2.png" alt="" srcset="" /></a>
+      <a href="https://leafletjs.com/"> <img src="./images/leafletjspng.png" alt="" srcset="" /></a>
+  
+    </div>
+
+      <p><span>&copy; </span>Copyright 2023 | alrights reserved</p>
+
+    </div>
+
+    <!-- JavaScript link -->
+    <script src="./app.js"></script>
+    
+  </body>
+</html>
